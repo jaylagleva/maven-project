@@ -1,0 +1,17 @@
+AWSTemplateFormatVersion: "2010-09-09"  
+Resources:  
+  WebInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      DisableApiTermination: true
+      InstanceType: t2.nano
+      ImageId: ami-80861296
+      KeyName: rancher
+      Monitoring: true
+      SecurityGroupIds:
+        - sg-e25c1897
+      SubnetId: subnet-644a6148
+      Tags:
+        -
+          Key: Name
+          Value: webserver
