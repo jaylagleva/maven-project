@@ -6,7 +6,7 @@ Resources:
       DisableApiTermination: true
       InstanceType: t2.nano
       ImageId: ami-80861296
-      KeyName: jenkins
+      KeyName: rancher
       Monitoring: true
       SecurityGroupIds:
         - sg-e25c1897
